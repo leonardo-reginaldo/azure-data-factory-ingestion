@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-curso-udemy-leonardo"
+		},
+		"ls_adls_accountKey": {
+			"value": ""
+		},
+		"ls_databricks_accessToken": {
+			"value": ""
+		},
+		"ls_adls_properties_typeProperties_url": {
+			"value": "https://workshopadlsleonardo.dfs.core.windows.net/"
+		},
+		"ls_akv_properties_typeProperties_baseUrl": {
+			"value": "https://akv-curso-udemy.vault.azure.net/"
+		},
+		"ls_ftp_ibge_properties_typeProperties_host": {
+			"value": "ftp.ibge.gov.br"
+		},
+		"ls_sql_udemy_curso_properties_typeProperties_server": {
+			"value": "server-udemy-curso-leonardo.database.windows.net"
+		},
+		"ls_sql_udemy_curso_properties_typeProperties_database": {
+			"value": "db-curso-udemy"
+		},
+		"ls_sql_udemy_curso_properties_typeProperties_userName": {
+			"value": "CloudSA1d0f622f"
+		},
+		"trg-storage-event_properties_01_ingest_product_new_parameters_current_date": {
+			"value": "20261031"
+		},
+		"trg-storage-event_properties_typeProperties_scope": {
+			"value": "/subscriptions/4c738715-462b-4d0b-ab96-8458a4347d76/resourceGroups/rg-curso-udemy/providers/Microsoft.Storage/storageAccounts/workshopadlsleonardo"
+		},
+		"trg_product_ingest_properties_01_ingest_product_new_parameters_current_date": {
+			"value": "20261030"
+		}
+	}
+}
