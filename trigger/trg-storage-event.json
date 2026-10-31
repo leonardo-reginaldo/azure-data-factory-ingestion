@@ -12,7 +12,7 @@
 			},
 			{
 				"pipelineReference": {
-					"referenceName": "01_ingest_product",
+					"referenceName": "01_ingest_product_new",
 					"type": "PipelineReference"
 				},
 				"parameters": {
