@@ -1,0 +1,15 @@
+{
+	"name": "adf-curso-udemy-leonardo",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "brazilsouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "81f85358-489d-4a57-92f0-1456a175f47e",
+		"tenantId": "61b98207-1461-4338-80b1-94e627cad2e6"
+	}
+}

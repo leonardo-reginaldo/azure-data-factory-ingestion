@@ -1,0 +1,34 @@
+{
+	"name": "trg-storage-event",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "02_ingest_sales",
+					"type": "PipelineReference"
+				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "01_ingest_product",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"current_date": "20261031"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/stage/blobs/events",
+			"blobPathEndsWith": "product.txt",
+			"ignoreEmptyBlobs": false,
+			"scope": "/subscriptions/4c738715-462b-4d0b-ab96-8458a4347d76/resourceGroups/rg-curso-udemy/providers/Microsoft.Storage/storageAccounts/workshopadlsleonardo",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
